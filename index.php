@@ -2,7 +2,7 @@
 
 session_start();
 ob_start();
-require_once 'libraries/espn-php/EpiCurl.php';
+// require_once 'libraries/espn-php/EpiCurl.php';
 require_once 'libraries/espn-php/EpiESPN.php';
 require_once 'models/events.php';
 
@@ -42,15 +42,25 @@ require_once 'models/events.php';
 		<div id="main" role="main">
 			
 			<div id="contact-form" class="clearfix">
-			    <h1>Choose the Sport</h1>
+			    <h1>Choose the Matchup from our Top Matchups of the Day</h1>
 
 				<?php
 					$eventsResult = $events->getSports();
 				?>
 				<ul>
-				<?php					
+				<?php
 					foreach ($eventsResult->sports as $sport) {
-						echo '<li><a href="leagues.php?sport=' . $sport->name . '">' . $sport->name . '</li>';
+						foreach ($sport->leagues as $league) {
+							foreach ($league->events as $event) {
+								echo '<li><a href="leagues.php?sport=' . $sport->name . '">';
+									$game = $event->competitions[0];
+									//var_dump($game->competitors[0]);
+									echo $game->competitors[0]->team->location . " " . $game->competitors[0]->team->name;
+									echo " vs ";
+									echo $game->competitors[1]->team->location . " " . $game->competitors[1]->team->name;
+								echo '</li>';
+							}
+						}
 					}
 				?>
 				</uL>

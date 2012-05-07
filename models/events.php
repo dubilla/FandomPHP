@@ -15,10 +15,16 @@ require_once 'libraries/espn-php/EpiESPN.php';
 class Events extends EpiESPN
 {
 	public function getLeaguesBySport($sport) {
+		var_dump($this->get('/sports/' . $sport . '/leagues?' . $this->apiKey . '=' . $this->apiValue));
+		exit();
 		return json_decode($this->get('/sports/' . $sport . '/leagues?' . $this->apiKey . '=' . $this->apiValue, null)->__resp->data);
 	}
 	
 	public function getSports() {
 		return json_decode($this->get('/sports/events?' . $this->apiKey . '=' . $this->apiValue, null)->__resp->data);
+	}
+	
+	public function getTopEvents() {
+		return json_decode($this->get('/sports/events/top?' . $this->apiKey . '=' . $this->apiValue, null)->__resp->data);
 	}
 }

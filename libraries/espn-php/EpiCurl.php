@@ -66,11 +66,18 @@ class EpiCurl
       }
 
       $innerSleepInt = $outerSleepInt = 1;
+
       while($this->running && ($this->execStatus == CURLM_OK || $this->execStatus == CURLM_CALL_MULTI_PERFORM))
       {
+
+/* Code dying here - Come back and figure this out [DBU 4/4/12]
         usleep($outerSleepInt);
+
         $outerSleepInt = intval(max(1, ($outerSleepInt*$this->sleepIncrement)));
-        $ms=curl_multi_select($this->mc, 0);
+
+        $ms = curl_multi_select($this->mc, 0);
+*/
+		$ms = 1;
         if($ms > 0)
         {
           do{

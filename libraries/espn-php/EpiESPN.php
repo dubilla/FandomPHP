@@ -13,14 +13,12 @@
 class EpiESPN
 {
   protected $clientId, $clientSecret, $accessToken;
-  protected $requestTokenUrl= 'https://foursquare.com/oauth2/authenticate';
-  protected $accessTokenUrl = 'https://foursquare.com/oauth2/access_token';
-  protected $authorizeUrl   = 'https://foursquare.com/oauth2/authorize';
   protected $apiUrl         = 'http://api.espn.com';
   protected $userAgent      = 'EpiESPN (http://github.com/dubilla/espn-php)';
   protected $apiVersion     = 'v1';
   protected $apiKey			= "apikey";
   protected $apiValue 		= "ceevkg9k7t9gs4kyufyf9rqr";
+//  protected $apiValue			= "dv58z289n3pf5yw4gxrpzrwq";
   protected $isAsynchronous = false;
   protected $followLocation = false;
   protected $connectionTimeout = 5;
@@ -125,6 +123,7 @@ class EpiESPN
     }
 
     $resp = new EpiESPNJson(EpiCurl::getInstance()->addCurl($ch), $this->debug);
+
     if(!$this->isAsynchronous)
       $resp->responseText;
 
@@ -195,6 +194,7 @@ class EpiESPNJson implements ArrayAccess, Countable, IteratorAggregate
     $this->responseText = $this->__resp->data;
     $this->headers      = $this->__resp->headers;
     $this->code         = $this->__resp->code;
+
     if(isset($accessible[$name]) && $accessible[$name])
       return $this->$name;
     elseif(($this->code < 200 || $this->code >= 400) && !isset($accessible[$name]))
