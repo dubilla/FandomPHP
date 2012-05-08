@@ -4,6 +4,7 @@ session_start();
 ob_start();
 require_once 'libraries/espn-php/EpiCurl.php';
 require_once 'libraries/espn-php/EpiESPN.php';
+require_once 'models/events.php';
 	$clientId = '3F2UHC2LAAK4PWWSYUCQOHQ1HNOCSRJAOLLLGPZJU0TYY01M';
 	$clientSecret = 'BHRPXLVV0G4CEWFYO0ADNFSLG3RY5BY1BBWWK22E3JI2S3KH';
 	$code = 'BFVH1JK5404ZUCI4GUTHGPWO3BUIUTEG3V3TKQ0IHVRVGVHS';
@@ -12,6 +13,8 @@ require_once 'libraries/espn-php/EpiESPN.php';
 	$userId = 'self';
 	$espnObj = new EpiESPN($clientId, $clientSecret, $accessToken);
 	$espnObjUnAuth = new EpiESPN($clientId, $clientSecret);
+	$events = new Events();
+	$eventID = $_GET["eventID"];
 ?>  
 <!doctype html>
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
@@ -41,29 +44,15 @@ require_once 'libraries/espn-php/EpiESPN.php';
 		<div id="main" role="main">
 			
 			<div id="contact-form" class="clearfix">
-			    <h1>DUH DUH DUHN!  DUH DUH DUHN!</h1>
-
 				<?php
-					$eventsResult = $espnObjUnAuth->get('/sports/football/college-football/events?apikey=ceevkg9k7t9gs4kyufyf9rqr', null);
-					$data = $eventsResult->__resp->data;
-					$eventsObj = json_decode($data);
-					$sportName = $events->sports[0]->leagues[0]->name;
+					$event = $events->getEvent($eventID);
+					$game = $event->competitions[0];
 				?>
-				<h2><?php echo $sportName; ?> Events Today</h2>
-				<?php
-					$events = $eventsObj->sports[0]->leagues[0]->events;
-					foreach ($events as $event) {
-						$opponents = $event->competitions[0]->competitors;
-						for ($i=0; $i < count($opponents); $i++) {
-							// var_dump($opponent->team->location);
-							echo $opponents[$i]->team->location . " " . $opponents[$i]->team->name;
-							if ($i < count($opponents) - 1) {
-								echo " vs. ";
-							}
-						}
-						// var_dump($event->competitions[0]->competitors);
-					}
-				?>
+			    <h1>
+					<?php echo $game->competitors[0]->team->location . " " . $game->competitors[0]->team->name; ?>
+					vs.
+					<?php echo $game->competitors[1]->team->location . " " . $game->competitors[1]->team->name; ?>
+				</h1>
 
 			</div>
 

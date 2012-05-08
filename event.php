@@ -2,10 +2,8 @@
 
 session_start();
 ob_start();
-// require_once 'libraries/espn-php/EpiCurl.php';
+require_once 'libraries/espn-php/EpiCurl.php';
 require_once 'libraries/espn-php/EpiESPN.php';
-require_once 'models/events.php';
-
 	$clientId = '3F2UHC2LAAK4PWWSYUCQOHQ1HNOCSRJAOLLLGPZJU0TYY01M';
 	$clientSecret = 'BHRPXLVV0G4CEWFYO0ADNFSLG3RY5BY1BBWWK22E3JI2S3KH';
 	$code = 'BFVH1JK5404ZUCI4GUTHGPWO3BUIUTEG3V3TKQ0IHVRVGVHS';
@@ -14,8 +12,7 @@ require_once 'models/events.php';
 	$userId = 'self';
 	$espnObj = new EpiESPN($clientId, $clientSecret, $accessToken);
 	$espnObjUnAuth = new EpiESPN($clientId, $clientSecret);
-	$events = new Events();
-?>
+?>  
 <!doctype html>
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
@@ -32,6 +29,8 @@ require_once 'models/events.php';
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<style></style>
+
 </head>
 <body>
 	<div id="container">
@@ -42,29 +41,29 @@ require_once 'models/events.php';
 		<div id="main" role="main">
 			
 			<div id="contact-form" class="clearfix">
-			    <h1>Choose the Matchup from our Top Matchups of the Day</h1>
+			    <h1>DUH DUH DUHN!  DUH DUH DUHN!</h1>
 
 				<?php
-					$sports = $events->sports;
-					$eventsResult = $events->getEventsBySports($sports);
+					$eventsResult = $espnObjUnAuth->get('/sports/football/college-football/events?apikey=ceevkg9k7t9gs4kyufyf9rqr', null);
+					$data = $eventsResult->__resp->data;
+					$eventsObj = json_decode($data);
+					$sportName = $events->sports[0]->leagues[0]->name;
 				?>
-				<ul>
+				<h2><?php echo $sportName; ?> Events Today</h2>
 				<?php
-					foreach ($eventsResult->sports as $sport) {
-						foreach ($sport->leagues as $league) {
-							foreach ($league->events as $event) {
-								echo '<li><a href="event.php?eventID=' . $event->id . '">';
-									$game = $event->competitions[0];
-									//var_dump($game->competitors[0]);
-									echo $game->competitors[0]->team->location . " " . $game->competitors[0]->team->name;
-									echo " vs ";
-									echo $game->competitors[1]->team->location . " " . $game->competitors[1]->team->name;
-								echo '</li>';
+					$events = $eventsObj->sports[0]->leagues[0]->events;
+					foreach ($events as $event) {
+						$opponents = $event->competitions[0]->competitors;
+						for ($i=0; $i < count($opponents); $i++) {
+							// var_dump($opponent->team->location);
+							echo $opponents[$i]->team->location . " " . $opponents[$i]->team->name;
+							if ($i < count($opponents) - 1) {
+								echo " vs. ";
 							}
 						}
+						// var_dump($event->competitions[0]->competitors);
 					}
 				?>
-				</uL>
 
 			</div>
 
@@ -75,5 +74,31 @@ require_once 'models/events.php';
 
 		</footer>
 	</div>
+<!--
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script>
+		(function(){
+
+				jQuery.getJSON("http://api.espn.com/v1/sports/football/college-football/",
+					{
+						data: {
+							apikey: "ceevkg9k7t9gs4kyufyf9rqr"
+						},
+						type: "get",
+						format: "json",
+						success:
+							function(json) {
+								alert("yay");
+								console.log(json);
+							},
+						error:
+							function() {
+								alert("boo");
+							}
+					}
+				);
+		})();
+	</script>
+-->
 </body>
 </html>

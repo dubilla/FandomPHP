@@ -14,9 +14,24 @@ require_once 'libraries/espn-php/EpiESPN.php';
 
 class Events extends EpiESPN
 {
+	public $sports = array("mlb", "nba", "nhl", "nfl", "college-football", "mens-college-basketball");
+	
+	public function getEvent($id) {
+		$events = $this->getEventsBySports($this->sports);
+		foreach ($events->sports as $sport) {
+			foreach ($sport->leagues as $league) {
+				foreach ($league->events as $ev) {
+					if ($id == $ev->id) {
+						$event = $ev;
+						break;
+					}
+				}
+			}
+		}
+		return $event;
+	}
+	
 	public function getLeaguesBySport($sport) {
-		var_dump($this->get('/sports/' . $sport . '/leagues?' . $this->apiKey . '=' . $this->apiValue));
-		exit();
 		return json_decode($this->get('/sports/' . $sport . '/leagues?' . $this->apiKey . '=' . $this->apiValue, null)->__resp->data);
 	}
 	
@@ -26,5 +41,9 @@ class Events extends EpiESPN
 	
 	public function getTopEvents() {
 		return json_decode($this->get('/sports/events/top?' . $this->apiKey . '=' . $this->apiValue, null)->__resp->data);
+	}
+	
+	public function getEventsBySports($sports) {
+		return json_decode($this->get('/sports/events?leagues=' . implode(',', $sports) . '&' . $this->apiKey . '=' . $this->apiValue, null)->__resp->data);
 	}
 }
