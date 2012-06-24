@@ -1,4 +1,4 @@
-<h1>Choose the Matchup from our Top Matchups of the Day</h1>
+<h2>Choose the Matchup from our Top Matchups of the Day</h2>
 
 <ul>
 <?php
@@ -12,7 +12,7 @@
 							echo $game["competitors"][0]["team"]["location"] . " " . $game["competitors"][0]["team"]["name"] ;
 							echo " vs ";
 							echo $game["competitors"][1]["team"]["location"]  . " " . $game["competitors"][1]["team"]["name"] ;
-						echo '</li>';
+						echo '</a></li>';
 					}
 				}
 			}
