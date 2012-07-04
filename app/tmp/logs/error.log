@@ -1661,3 +1661,8 @@
 #5 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
 #6 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #7 {main}
+2012-07-04 22:28:18 Error: [MissingActionException] Action EventsController::events() could not be found.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
