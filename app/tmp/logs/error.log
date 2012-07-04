@@ -1559,3 +1559,105 @@
 #5 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
 #6 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #7 {main}
+2012-06-24 20:40:23 Error: [MissingControllerException] Controller class Event.phpController could not be found.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-06-24 20:41:09 Error: [MissingActionException] Action EventsController::view.php() could not be found.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-06-24 20:43:48 Error: [MissingActionException] Action EventsController::view.php() could not be found.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-06-24 20:43:56 Error: [MissingViewException] View file "/Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/app/View/Events/view.ctp" is missing.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/lib/Cake/View/View.php(462): View->_getViewFileName(NULL)
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-06-24 20:44:12 Error: [MissingViewException] View file "/Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/app/View/Events/view.ctp" is missing.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/lib/Cake/View/View.php(462): View->_getViewFileName(NULL)
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-06-24 20:45:38 Error: [MissingViewException] View file "/Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/app/View/Events/view.ctp" is missing.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/lib/Cake/View/View.php(462): View->_getViewFileName(NULL)
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-06-24 20:45:47 Error: [MissingViewException] View file "/Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/app/View/Events/view.ctp" is missing.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/lib/Cake/View/View.php(462): View->_getViewFileName(NULL)
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-06-24 20:45:50 Error: [MissingViewException] View file "/Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/app/View/Events/view.ctp" is missing.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/lib/Cake/View/View.php(462): View->_getViewFileName(NULL)
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/XAMPP/xamppfiles/htdocs/projects/Fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-04 21:42:14 Error: [CakeException] 0
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(2697): Espn->read(Object(Event), Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/Controller/EventsController.php(13): Model->find('first')
+#2 [internal function]: EventsController->view()
+#3 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EventsController), Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#6 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2012-07-04 21:42:19 Error: [CakeException] 0
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(2697): Espn->read(Object(Event), Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/Controller/EventsController.php(13): Model->find('first')
+#2 [internal function]: EventsController->view()
+#3 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EventsController), Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#6 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2012-07-04 21:44:04 Error: [CakeException] 0
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(2697): Espn->read(Object(Event), Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/Controller/EventsController.php(13): Model->find('first')
+#2 [internal function]: EventsController->view()
+#3 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EventsController), Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#6 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2012-07-04 21:44:18 Error: [CakeException] 0
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(2697): Espn->read(Object(Event), Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/Controller/EventsController.php(13): Model->find('first')
+#2 [internal function]: EventsController->view()
+#3 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EventsController), Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#6 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2012-07-04 21:44:28 Error: [CakeException] 0
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(2697): Espn->read(Object(Event), Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/Controller/EventsController.php(13): Model->find('first')
+#2 [internal function]: EventsController->view()
+#3 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EventsController), Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#6 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2012-07-04 21:45:53 Error: [CakeException] 0
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(2697): Espn->read(Object(Event), Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/Controller/EventsController.php(13): Model->find('first')
+#2 [internal function]: EventsController->view()
+#3 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EventsController), Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#6 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}

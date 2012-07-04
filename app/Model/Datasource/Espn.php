@@ -102,7 +102,20 @@ class Espn extends DataSource {
          * Now we get, decode and return the remote data.
          */
         $data['conditions']['apiKey'] = $this->config['apiKey'];
-        $json = $this->Http->get($this->config["url"] . 'sports/events/top', $data['conditions']);
+
+		switch($Model->useTable) {
+			case "events": 
+				// Find by ID
+				if ($data['conditions']['id'] != null) {
+					// Have to pass in the URL
+					// This is ugly - ask Chris Jason if there's away around this [DBU 7/4/12]
+					$json = $this->Http->get($this->config["url"] . $data['conditions']['league'] . '/events/' . $data['conditions']['id'], $data['conditions']);	
+				// Find all
+				} else {
+        			$json = $this->Http->get($this->config["url"] . 'sports/events/top', $data['conditions']);	
+				}
+		}
+
         $res = json_decode($json, true);
         if (is_null($res)) {
             $error = json_last_error();
