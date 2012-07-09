@@ -6287,3 +6287,12 @@ a.badge:hover {
     margin-left: 30px;
   }
 }
+
+/* FANDOM */
+/* Event */
+.event-mod .opponent {
+	float: left;
+}
+.event-mod .opponent .punch-link {
+	float: left;
+}

@@ -1666,3 +1666,268 @@
 #1 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
 #2 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2012-07-04 22:59:59 Error: [MissingActionException] Action EventsController::punch() could not be found.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-04 23:00:00 Error: [MissingActionException] Action EventsController::punch() could not be found.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-04 23:04:37 Error: [MissingActionException] Action EventsController::punch() could not be found.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-04 23:18:23 Error: [MissingActionException] Action EventsController::punch() could not be found.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-04 23:21:25 Error: [MissingActionException] Action EventsController::punch() could not be found.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-04 23:23:06 Error: [MissingControllerException] Controller class ViewController could not be found.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-04 23:23:10 Error: [MissingControllerException] Controller class ViewController could not be found.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-04 23:23:11 Error: [MissingControllerException] Controller class ViewController could not be found.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-04 23:23:20 Error: [MissingActionException] Action EventsController::punch() could not be found.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-04 23:35:23 Error: [MissingConnectionException] Database connection "SQLSTATE[28000] [1045] Access denied for user 'user'@'localhost' (using password: YES)" is missing, or could not be created.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Datasource/DboSource.php(245): Mysql->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/ConnectionManager.php(101): DboSource->__construct(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(3416): ConnectionManager::getDataSource('default')
+#3 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(1083): Model->setDataSource('default')
+#4 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(3442): Model->setSource('espns')
+#5 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(775): Model->getDataSource()
+#6 [internal function]: Model->__call('getSchemaName', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(3427): Espn->getSchemaName()
+#8 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(1083): Model->setDataSource('espn')
+#9 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(3442): Model->setSource('events')
+#10 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(2697): Model->getDataSource()
+#11 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/Controller/EventsController.php(15): Model->find('all', Array)
+#12 [internal function]: EventsController->view()
+#13 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EventsController), Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#15 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#16 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2012-07-04 23:35:43 Error: [MissingConnectionException] Database connection "SQLSTATE[28000] [1045] Access denied for user 'user'@'localhost' (using password: YES)" is missing, or could not be created.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Datasource/DboSource.php(245): Mysql->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/ConnectionManager.php(101): DboSource->__construct(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(3416): ConnectionManager::getDataSource('default')
+#3 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(1083): Model->setDataSource('default')
+#4 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(3442): Model->setSource('espns')
+#5 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(775): Model->getDataSource()
+#6 [internal function]: Model->__call('getSchemaName', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(3427): Espn->getSchemaName()
+#8 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(1083): Model->setDataSource('espn')
+#9 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(3442): Model->setSource('events')
+#10 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(2697): Model->getDataSource()
+#11 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/Controller/EventsController.php(15): Model->find('all', Array)
+#12 [internal function]: EventsController->view()
+#13 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EventsController), Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#15 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#16 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2012-07-04 23:37:41 Error: [MissingConnectionException] Database connection "SQLSTATE[28000] [1045] Access denied for user 'user'@'localhost' (using password: YES)" is missing, or could not be created.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Datasource/DboSource.php(245): Mysql->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/ConnectionManager.php(101): DboSource->__construct(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(3416): ConnectionManager::getDataSource('default')
+#3 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(1083): Model->setDataSource('default')
+#4 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(3442): Model->setSource('events')
+#5 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(2697): Model->getDataSource()
+#6 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/Controller/EventsController.php(7): Model->find('all')
+#7 [internal function]: EventsController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EventsController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-07-04 23:37:42 Error: [MissingConnectionException] Database connection "SQLSTATE[28000] [1045] Access denied for user 'user'@'localhost' (using password: YES)" is missing, or could not be created.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Datasource/DboSource.php(245): Mysql->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/ConnectionManager.php(101): DboSource->__construct(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(3416): ConnectionManager::getDataSource('default')
+#3 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(1083): Model->setDataSource('default')
+#4 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(3442): Model->setSource('events')
+#5 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(2697): Model->getDataSource()
+#6 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/Controller/EventsController.php(7): Model->find('all')
+#7 [internal function]: EventsController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EventsController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-07-04 23:37:42 Error: [MissingConnectionException] Database connection "SQLSTATE[28000] [1045] Access denied for user 'user'@'localhost' (using password: YES)" is missing, or could not be created.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Datasource/DboSource.php(245): Mysql->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/ConnectionManager.php(101): DboSource->__construct(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(3416): ConnectionManager::getDataSource('default')
+#3 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(1083): Model->setDataSource('default')
+#4 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(3442): Model->setSource('events')
+#5 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(2697): Model->getDataSource()
+#6 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/Controller/EventsController.php(7): Model->find('all')
+#7 [internal function]: EventsController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EventsController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-07-04 23:37:42 Error: [MissingConnectionException] Database connection "SQLSTATE[28000] [1045] Access denied for user 'user'@'localhost' (using password: YES)" is missing, or could not be created.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Datasource/DboSource.php(245): Mysql->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/ConnectionManager.php(101): DboSource->__construct(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(3416): ConnectionManager::getDataSource('default')
+#3 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(1083): Model->setDataSource('default')
+#4 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(3442): Model->setSource('events')
+#5 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(2697): Model->getDataSource()
+#6 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/Controller/EventsController.php(7): Model->find('all')
+#7 [internal function]: EventsController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EventsController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-07-04 23:37:43 Error: [MissingConnectionException] Database connection "SQLSTATE[28000] [1045] Access denied for user 'user'@'localhost' (using password: YES)" is missing, or could not be created.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Datasource/DboSource.php(245): Mysql->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/ConnectionManager.php(101): DboSource->__construct(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(3416): ConnectionManager::getDataSource('default')
+#3 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(1083): Model->setDataSource('default')
+#4 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(3442): Model->setSource('events')
+#5 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(2697): Model->getDataSource()
+#6 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/Controller/EventsController.php(7): Model->find('all')
+#7 [internal function]: EventsController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EventsController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-07-04 23:37:43 Error: [MissingConnectionException] Database connection "SQLSTATE[28000] [1045] Access denied for user 'user'@'localhost' (using password: YES)" is missing, or could not be created.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Datasource/DboSource.php(245): Mysql->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/ConnectionManager.php(101): DboSource->__construct(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(3416): ConnectionManager::getDataSource('default')
+#3 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(1083): Model->setDataSource('default')
+#4 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(3442): Model->setSource('events')
+#5 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(2697): Model->getDataSource()
+#6 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/Controller/EventsController.php(7): Model->find('all')
+#7 [internal function]: EventsController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EventsController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-07-04 23:37:43 Error: [MissingConnectionException] Database connection "SQLSTATE[28000] [1045] Access denied for user 'user'@'localhost' (using password: YES)" is missing, or could not be created.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Datasource/DboSource.php(245): Mysql->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/ConnectionManager.php(101): DboSource->__construct(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(3416): ConnectionManager::getDataSource('default')
+#3 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(1083): Model->setDataSource('default')
+#4 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(3442): Model->setSource('events')
+#5 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(2697): Model->getDataSource()
+#6 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/Controller/EventsController.php(7): Model->find('all')
+#7 [internal function]: EventsController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EventsController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-07-04 23:37:43 Error: [MissingConnectionException] Database connection "SQLSTATE[28000] [1045] Access denied for user 'user'@'localhost' (using password: YES)" is missing, or could not be created.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Datasource/DboSource.php(245): Mysql->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/ConnectionManager.php(101): DboSource->__construct(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(3416): ConnectionManager::getDataSource('default')
+#3 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(1083): Model->setDataSource('default')
+#4 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(3442): Model->setSource('events')
+#5 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(2697): Model->getDataSource()
+#6 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/Controller/EventsController.php(7): Model->find('all')
+#7 [internal function]: EventsController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EventsController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-07-04 23:37:51 Error: [MissingConnectionException] Database connection "SQLSTATE[28000] [1045] Access denied for user 'user'@'localhost' (using password: YES)" is missing, or could not be created.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Datasource/DboSource.php(245): Mysql->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/ConnectionManager.php(101): DboSource->__construct(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(3416): ConnectionManager::getDataSource('default')
+#3 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(1083): Model->setDataSource('default')
+#4 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(3442): Model->setSource('events')
+#5 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(2697): Model->getDataSource()
+#6 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/Controller/EventsController.php(7): Model->find('all')
+#7 [internal function]: EventsController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EventsController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-07-04 23:37:52 Error: [MissingConnectionException] Database connection "SQLSTATE[28000] [1045] Access denied for user 'user'@'localhost' (using password: YES)" is missing, or could not be created.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Datasource/DboSource.php(245): Mysql->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/ConnectionManager.php(101): DboSource->__construct(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(3416): ConnectionManager::getDataSource('default')
+#3 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(1083): Model->setDataSource('default')
+#4 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(3442): Model->setSource('events')
+#5 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(2697): Model->getDataSource()
+#6 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/Controller/EventsController.php(7): Model->find('all')
+#7 [internal function]: EventsController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EventsController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-07-04 23:40:43 Error: [MissingConnectionException] Database connection "SQLSTATE[28000] [1045] Access denied for user 'user'@'localhost' (using password: YES)" is missing, or could not be created.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Datasource/DboSource.php(245): Mysql->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/ConnectionManager.php(101): DboSource->__construct(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(3416): ConnectionManager::getDataSource('default')
+#3 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(1083): Model->setDataSource('default')
+#4 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(3442): Model->setSource('events')
+#5 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Model/Model.php(2697): Model->getDataSource()
+#6 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/Controller/EventsController.php(7): Model->find('all')
+#7 [internal function]: EventsController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EventsController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-07-04 23:45:52 Error: [MissingHelperException] Helper class FandomHelper could not be found.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/View/View.php(852): HelperCollection->load('Fandom', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/View/View.php(458): View->loadHelpers()
+#2 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#3 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#4 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#5 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-07-04 23:46:26 Error: [MissingControllerException] Controller class PunchController could not be found.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-04 23:48:05 Error: [MissingControllerException] Controller class PunchController could not be found.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-04 23:55:12 Error: [MissingControllerException] Controller class PunchController could not be found.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-04 23:55:13 Error: [MissingControllerException] Controller class PunchController could not be found.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-04 23:55:52 Error: [MissingViewException] View file "/Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/View/Punches/add.ctp" is missing.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/View/View.php(462): View->_getViewFileName(NULL)
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(PunchesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-04 23:57:39 Error: [MissingViewException] View file "/Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/View/Punches/add.ctp" is missing.
+#0 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/View/View.php(462): View->_getViewFileName(NULL)
+#1 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(PunchesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/XAMPP/xamppfiles/htdocs/projects/fandom/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

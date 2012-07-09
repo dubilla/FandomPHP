@@ -106,7 +106,7 @@ class Espn extends DataSource {
 		switch($Model->useTable) {
 			case "events": 
 				// Find by ID
-				if ($data['conditions']['id'] != null) {
+				if (array_key_exists("id", $data['conditions'])) {
 					// Have to pass in the URL
 					// This is ugly - ask Chris Jason if there's away around this [DBU 7/4/12]
 					$json = $this->Http->get($this->config["url"] . $data['conditions']['league'] . '/events/' . $data['conditions']['id'], $data['conditions']);	
